@@ -30,6 +30,14 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+.soft-orange-bg {
+    background-color: var(--soft-orange);
+}
+
+.soft-blue-bg {
+    background-color: var(--soft-blue);
+}
+
 header {
     position: relative;
     display: flex;
@@ -158,6 +166,24 @@ main {
     font-family: "Inter", sans-serif;
 }
 
+.currency-table--container .icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency-table--container .down {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+
+.currency-table--container .up {
+    background-image: url('./assets/icons/trending-up.svg');
+}
+
 .main-currency-table .currency-table--title {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -175,7 +201,6 @@ main {
     line-height: 2.3rem;
     color: var(--secondary-blue);
 }
-
 
 .currency-table--container,
 .commission-table--container {
@@ -229,21 +254,20 @@ main {
     color: #757575;
 }
 
-.currency-table--container .icon {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.currency-table--date, 
+.commission-table--date {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-.currency-table--container .down {
-    background-image: url('./assets/icons/trending-down.svg');
+.currency-table--date p,
+.commission-table--date p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black);
 }
-
-.currency-table--container .up {
-    background-image: url('./assets/icons/trending-up.svg');
-}
-
