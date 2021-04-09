@@ -116,7 +116,7 @@ main {
 }
 
 .main-exchange-container--title {
-    width: 100%;
+    width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
